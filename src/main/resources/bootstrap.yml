@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: elasticsearch
+
+server:
+  port: 9191
