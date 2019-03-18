@@ -155,7 +155,7 @@ public class EsUtils {
         searchSourceBuilder.from(0);
         searchSourceBuilder.size(this.getCount(searchRequest).intValue());
         searchRequest.source(searchSourceBuilder);
-        //查询全部
+        //查询全部xxxxx
         searchRequest.types(type);
         return baseQuery(searchRequest);
     }

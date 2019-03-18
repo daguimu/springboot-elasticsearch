@@ -9,7 +9,6 @@ package com.yy.elasticsearch.controller;
 public class TestController {
 
 
-
     private String printMills(Long start, String message) {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(message + ":   ");

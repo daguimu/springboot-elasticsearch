@@ -20,12 +20,12 @@ public interface CompanyElasticService {
     boolean addCompany(Company newCompany);
 
     /**
-    *@Description: 批量添加Company数据
-    *@Param: [companies]
-    *@Return: boolean
-    *@Author: Guimu
-    *@Date: 2018/8/1  上午10:52
-    */
+     * @Description: 批量添加Company数据
+     * @Param: [companies]
+     * @Return: boolean
+     * @Author: Guimu
+     * @Date: 2018/8/1  上午10:52
+     */
     boolean batchAddCompany(List<Company> companies);
 
     /**

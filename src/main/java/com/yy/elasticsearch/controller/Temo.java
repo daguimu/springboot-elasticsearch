@@ -33,7 +33,7 @@ public class Temo {
         List<Company> list = new LinkedList<Company>();
         for (int i = 0; i < count; i++) {
             company = new Company();
-            company.setIndex("elasticsearch");
+            company.setIndex("elastic");
             String tempName = CompanyUtils.generateCompanySource();
             company.setName(tempName);
             Integer tempCorpId = random.nextInt(20);

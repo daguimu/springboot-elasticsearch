@@ -21,9 +21,10 @@ public class ElasticsearchConfiguration implements FactoryBean<RestHighLevelClie
 
     //@Value("${spring.data.elasticsearch.cluster-nodes}")
     private String clusterNodes = "127.0.0.1:9200";
+//    private String clusterNodes = "172.20.10.2:9200";
 
     private RestHighLevelClient restHighLevelClient;
-    private RestClient restClient;
+    private static RestClient restClient;
 
     /**
      * 控制Bean的实例化过程
@@ -85,6 +86,10 @@ public class ElasticsearchConfiguration implements FactoryBean<RestHighLevelClie
             System.out.println(e.getMessage());
         }
         return restHighLevelClient;
+    }
+
+    public static RestClient getRestClient() {
+        return restClient;
     }
 }
 
